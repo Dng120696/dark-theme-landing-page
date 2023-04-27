@@ -57,7 +57,7 @@ body {
   width: clamp(30rem, 85%, 90rem);
 }
 .sml-container {
-  width: clamp(30rem, 80%, 54rem);
+  width: clamp(30rem, 80%,65rem);
 }
 .extlrg-container,
 .lrg-container,
@@ -81,11 +81,9 @@ img {
   object-fit: cover;
 }
 h1 {
-  font-size: clamp(2.4rem, 2.8vw, 3.2rem);
+  font-size: clamp(2.4rem, 2.8vw, 3.6rem);
 }
-h2 {
-  font-size: clamp(1.8rem, 2vw, 2.6rem);
-}
+
 h3{
   font-size: clamp(1.6rem, 2vw, 2.4rem);
 }
@@ -228,7 +226,7 @@ header::after {
 }
 /*  SECTION 1*/
 .sec-1{
-  gap : clamp(5rem,5.5vw,6rem);
+  gap : clamp(4rem,4.5vw,5rem);
 }
 .sec-1 article div{
   width: clamp(7rem,12vw,12rem);
@@ -250,6 +248,9 @@ header::after {
   text-align: left;
   gap: clamp(3rem,3.5vw,4rem);
   align-items: center;
+}
+.sec-2 h1{
+  width: 70%;
 }
 .clr-green{
   color: var(--Cyan);
@@ -304,9 +305,10 @@ header::after {
 }
 .sec-3 .flex{
   gap: clamp(1.5rem,1.8vw,2rem);
+  align-items: center;
 }
 .sec-3 article img{
-  width: clamp(4rem,4.5vw,5rem);
+  width: clamp(3rem,3.2vw,3.5rem);
   border-radius: 50%;
 }
 
