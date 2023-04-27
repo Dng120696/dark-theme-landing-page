@@ -96,8 +96,8 @@ p {
   line-height: 1.6;
 }
 p,
-a,
-.fs-mdm{
+a
+{
   font-size: clamp(1.4rem, 1.2vw, 1.8rem);
   font-weight: 400;
 }
@@ -127,7 +127,9 @@ a {
   justify-content: space-between;
   align-items: center;
   position: relative;
+
 }
+
 .nav .logo img {
   width: clamp(10rem, 15vw, 18rem);
   margin: 0;
@@ -186,7 +188,7 @@ a {
 }
 /* HEADER SECTION */
 header {
-  background-color: var(--testi-Dark-Blue);
+  background-color: var(--intro-Dark-Blue);
   position: relative;
   z-index: 1;
 }
@@ -209,6 +211,7 @@ header::after {
   height: calc(37.5rem - 3rem);
   background-color: var(--main-Dark-Blue);
 }
+
 .btn {
   border: none;
   background: linear-gradient(to right, var(--Cyan), var(--Blue));
@@ -233,6 +236,15 @@ header::after {
   margin: 0 auto;
 
 }
+.sec-1 article:nth-child(1),
+.sec-1 article:nth-child(3){
+  animation:goingright 3s;
+}
+.sec-1 article:nth-child(2),
+.sec-1 article:nth-child(4){
+  animation:goingleft 3s;
+}
+
 /*  SECTION 2*/
 .sec-2{
   text-align: left;
@@ -279,12 +291,12 @@ header::after {
 }
 .sec-3 article{
   background-color: var(--testi-Dark-Blue);
-  padding: clamp(2rem,3vw,4rem) clamp(2rem,2.2vw,2.5rem) ;
+  padding: clamp(2.5rem,3vw,3.5rem) clamp(2rem,2.5vw,3rem) ;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 15px hsl(219, 30%,15%);
 }
 .sec-3 article p{
-  font-size: clamp(1.1rem, 1.4vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
 }
 .sec-3 article img,
 .sec-3 article p:last-child{
@@ -303,9 +315,10 @@ header::after {
 }
 .fs-mdm{
   font-weight: 700;
+  font-size: clamp(1.2rem, 1.2vw, 1.4rem);
 }
 .fs-extsml{
-  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-size: 1rem;
   letter-spacing: 1px;
   color: hsl(0, 0%, 85%);
 }
